@@ -13,6 +13,8 @@ public class SlopeOfALine {
             return slopename;
         }
     }
+
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter x1: ");
@@ -23,6 +25,5 @@ public class SlopeOfALine {
         int y1 = scan.nextInt();
         System.out.println("Enter y2: ");
         int y2 = scan.nextInt();
-        System.out.println(Slope(x1, y1, x2, y2));
-    }
+        System.out.println(Slope(x1, y1, x2, y2)); }
 }
