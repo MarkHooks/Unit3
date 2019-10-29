@@ -1,12 +1,7 @@
 import java.util.Scanner;
 
 public class ShareDigit {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("enter first two digit number");
-        int digit1 = scan.nextInt();
-        System.out.println("enter second two digit number");
-        int digit2 = scan.nextInt();
+    public static String numbers(int digit1, int digit2){
 
         boolean answer;
 
@@ -26,6 +21,14 @@ public class ShareDigit {
             answer = true;
         else
             answer = false;
-        System.out.println("("+digit1 + ","+ digit2+")"+ answer);
+        return "("+digit1 + ","+ digit2+")"+ answer;
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("enter first two digit number");
+        int digit1 = scan.nextInt();
+        System.out.println("enter second two digit number");
+        int digit2 = scan.nextInt();
+        System.out.println(numbers(digit1, digit2));
     }
 }
